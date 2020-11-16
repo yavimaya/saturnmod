@@ -3,12 +3,23 @@ Saturn Switchless Mod (COMMON ANODE R-G LED)
 
 This is the PIC-code needed for the Switchless Mod as described at http://knzl.de/saturnmod/ .
 
-BUT IN THIS CASE IS MADE FOR RED-GREEN LED WITH COMMON ANODE.
-You can add a 220 Ohm resistor in the wire to the red part of the led in order to soften that color
-to get a more defined orange one when both parts red and green are lighted.
+BUT IN THIS CASE IS MADE FOR COMMON ANODE RED-GREEN LED USED TO SWITCH ORIGINAL CONSOLE POWER LED.
+Instead of using original saturn LED gnd pad, you have to use its positive (+vcc) pad to solder common anode to it.
+Then both cathodes to pins 5 (red led leg) and 6 (green led leg) of the PIC 16F630.
+You can add a 220 Ohm resistor from pin 5 to red leg of the led in order to soften that color to get a more defined orange one when both parts of the led are lighted.
 
 For flashing a 16F630 (maybe 16F676 but untested), you will only need the .hex-file, the rest is
 the source-code needed for building it yourself.
+I've added both hex, original common cathode led and this modified for common anode leds.
+
+COLORS:
+Red = JAP
+Orange = USA
+Green = PAL
+
+BLINKING LED: 
+Slow: 50hz
+Fast: 60hz
 
 Building
 --------

@@ -12,14 +12,9 @@ For flashing a 16F630 (maybe 16F676 but untested), you will only need the .hex-f
 the source-code needed for building it yourself.
 I've added both hex, original common cathode led and this modified for common anode leds.
 
-COLORS:
-Red = JAP
-Orange = USA
-Green = PAL
+COLORS: Red = JAP, Orange = USA, Green = PAL
 
-BLINKING LED: 
-Slow: 50hz
-Fast: 60hz
+BLINKING LED: Slow = 50hz, Fast = 60hz
 
 Building
 --------

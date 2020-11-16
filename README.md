@@ -1,9 +1,11 @@
 Saturn Switchless Mod (COMMON ANODE R-G LED)
-=====================
+=============================================
 
 This is the PIC-code needed for the Switchless Mod as described at http://knzl.de/saturnmod/ .
 
-BUT IN THIS CASE IS MADE FOR RED-GREEN LED WITH COMMON ANODE
+BUT IN THIS CASE IS MADE FOR RED-GREEN LED WITH COMMON ANODE.
+You can add a 220 Ohm resistor in the wire to the red part of the led in order to soften that color
+to get a more defined orange one when both parts red and green are lighted.
 
 For flashing a 16F630 (maybe 16F676 but untested), you will only need the .hex-file, the rest is
 the source-code needed for building it yourself.

@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------------
- * Saturn Switchless Mod PIC Code (16F630/16F676)
+ * Saturn Switchless Mod PIC Code (16F630/16F676) for common anode R-G LED
  * Copyright (c) 2004 Sebastian Kienzl <seb@riot.org>
+ * Modified by yavimaya 2020
  * ---------------------------------------------------------------
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -24,9 +25,10 @@ Byte
 1		current 50/60-setting is saved here
 
 these can be modified before burning:
-2		colour for EU	(1=green, 2=red, 3=orange)
-3		colour for USA
-4		colour for JAP
+		(colors 2=green, 1=red, 0=orange)
+2		colour for EU	(2=green)
+3		colour for USA	(0=orange)
+4		colour for JAP	(1=red)
 */
 
 __CONFIG( MCLRDIS & BOREN & PWRTEN & WDTDIS & INTOSCIO & UNPROTECT );
@@ -58,9 +60,9 @@ const char countries_VF[ COUNTRYNUM ] = {
 };
 
 char countries_COL[ COUNTRYNUM ] = {
-	0b10,	// eu: green   (1)
-	0b00,	// usa: orange (3)
-	0b01	// japan: red  (2)
+	0b10,	// eu: green   (2)
+	0b00,	// usa: orange (0)
+	0b01	// japan: red  (1)
 	//^^______ RC5/RC4 (red/green LED)
 };
 

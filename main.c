@@ -30,7 +30,7 @@ these can be modified before burning:
 */
 
 __CONFIG( MCLRDIS & BOREN & PWRTEN & WDTDIS & INTOSCIO & UNPROTECT );
-__EEPROM_DATA( 0, 0, 1, 3, 2, 0, 0, 0 );
+__EEPROM_DATA( 0, 0, 2, 0, 1, 0, 0, 0 );
 __EEPROM_DATA( '_', '_', 's', 'e', 'b', '!', '_', '_' );
 __IDLOC(2702);
 
@@ -58,9 +58,9 @@ const char countries_VF[ COUNTRYNUM ] = {
 };
 
 char countries_COL[ COUNTRYNUM ] = {
-	0b01,	// eu: green   (1)
-	0b11,	// usa: orange (3)
-	0b10	// japan: red  (2)
+	0b10,	// eu: green   (1)
+	0b00,	// usa: orange (3)
+	0b01	// japan: red  (2)
 	//^^______ RC5/RC4 (red/green LED)
 };
 
@@ -91,8 +91,8 @@ void reset5060()
 
 void darkenLeds( int msec )
 {
-	RC4 = 0;
-	RC5 = 0;
+	RC4 = 1;
+	RC5 = 1;
 	delay( msec );
 	setLeds();
 }

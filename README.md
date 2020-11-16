@@ -1,9 +1,11 @@
-Saturn Switchless Mod
+Saturn Switchless Mod (COMMON ANODE R-G LED)
 =====================
 
 This is the PIC-code needed for the Switchless Mod as described at http://knzl.de/saturnmod/ .
 
-For flashing a 16F630/16F676, you will only need the .hex-file, the rest is
+BUT IN THIS CASE IS MADE FOR RED-GREEN LED WITH COMMON ANODE
+
+For flashing a 16F630 (maybe 16F676 but untested), you will only need the .hex-file, the rest is
 the source-code needed for building it yourself.
 
 Building
@@ -20,6 +22,7 @@ License
 
     Saturn Switchless Mod
     Copyright (C) 2004 Sebastian Kienzl
+	Modified by yavimaya 2020.
     
     This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License

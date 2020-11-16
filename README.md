@@ -21,16 +21,14 @@ Building
 
 For building it, you'll need:
 
- * Microchip MPLAB IDE (FREE)
- * HI-TECH C Compiler, you can use the free "lite" version or the demo
-	(http://www.htsoft.com/microchip/products/compilers/PICClite.php)
+ * Microchip MPLAB IDE (FREE) with included HI-TECH C Compiler (http://ww1.microchip.com/downloads/en/DeviceDoc/MPLAB_8.30.zip)
  
 License
 -------
 
     Saturn Switchless Mod
     Copyright (C) 2004 Sebastian Kienzl
-	Modified by yavimaya 2020.
+    Modified by yavimaya 2020.
     
     This program is free software; you can redistribute it and/or
     modify it under the terms of the GNU General Public License

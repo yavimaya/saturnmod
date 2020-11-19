@@ -7,6 +7,7 @@ BUT IN THIS CASE IS MADE FOR COMMON ANODE RED-GREEN LED USED TO SWITCH ORIGINAL 
 Instead of using original saturn LED gnd pad, you have to use its positive (+vcc) pad to solder common anode to it.
 Then both cathodes to pins 5 (red led leg) and 6 (green led leg) of the PIC 16F630.
 You can add a 220 Ohm resistor from pin 5 to red leg of the led in order to soften that color to get a more defined orange one when both parts of the led are lighted.
+Don't use original led anode hole on the pcb for the R-G anode, search for a real 5v source.
 
 For flashing a 16F630 (maybe 16F676 but untested), you will only need the .hex-file, the rest is
 the source-code needed for building it yourself.
